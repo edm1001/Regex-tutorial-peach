@@ -14,33 +14,40 @@ The code presented below will be used as an example of how Regex is used. This c
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
 ### Anchors
-^, $:Anchors starts and ends regular expressions.
--Everything in parathneses are defined and the user must match the guidelines of the anchors. 
+^, $  :Anchors starts and ends regular expressions.
+-Everything between the ^ and $ symbols are defined and the user must match the guidelines of the anchors. 
 ### Quantifiers
--Quantifiers are a group that user can use to  further specify a criteria . In our case it will be :
+-Quantifiers are a group of expressions that user can use to  further specify a criteria . In our case it will be :
 
 ([a-z0-9_\.-]+)
 
--this means that the string that sent contain the letters a-z, numbers through 0-9, and symbols _, .,  or -. The + is an order command, it has to follow these orders or it may cause an error
+-this means that the string that sent contain the letters a-z, numbers through 0-9, and symbols _, .,  or -. The + is an order command, it has to follow these orders or it may cause an error.
 
 ### OR Operator
 -This is particular expression does not contain a OR operator, but we will look at the code that makes it so, and how it operates in the functions.
 
+x(y|z) - the | in the expressions means OR in simple terms. This means the string MUST have an x that is followed by y or z.
 
 ### Character Classes
-An example of Character Classes in this code is /d.
+An example of Character Classes in this code is /d, in the ([\da-z\.-]+).
 
 -it ensures that the expessions after the @ symbol, that a letter is picked and not a number.
 
 ### Flags
+Flags are used to give more guidelines to validate the code.
+
+Flags are not used in this code, but formally users can find them between the slashes where a flag indicator will be found. 
+
+For example:
+ g means "global" and makes the regex in to match everything within the string.
+
+ m means "multiline" and it means every line will be matched seperately, every expression will be read one by one between the anchors.
+
+ i means "insensitive" it means that the expression will not be picky betweeen capitals and lowercase so it will pass the matching.
 
 ### Grouping and Capturing
 The grouping  and capturing of an expression are done by parasenthesis.
@@ -54,15 +61,6 @@ As name suggests, to use this is the coder has to use brackets. These are templa
 For example :
 [a-z0-9_\.-]
 As explained earlier, this code means the response must have letters a-z, numbers 0-9, ., ., or _, and it is set in a bracket because it must be true for validation to go through.
-### Greedy and Lazy Match
--The example code does  not have greedy or lazy match.
-### Boundaries
-The example code does not contain Boundaries.
--Boundaries are used to look for specific words in a string.
-### Back-references
-The example code does not contain Back-references.
-### Look-ahead and Look-behind
-The example code does not contain any Look-ahead or Look-behind expressions
 
 ## Author
 Tutorial created by Edmer Valencia.
