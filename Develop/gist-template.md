@@ -80,4 +80,4 @@ For example :
 Tutorial created by Edmer Valencia.
 - Email: edmer_franciz@yahoo.com
 - Github:  https://github.com/edm1001
-- Gist Link: 
+- Gist Link: https://gist.github.com/edm1001/fceea1ab643a24272e736cbefd5a4417
