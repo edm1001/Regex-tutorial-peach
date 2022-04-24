@@ -1,5 +1,6 @@
 # Regex Tutorial Starter Code
 
+## Expectations
 
 - A tutorial explaining a specifix regex
 to understand the search pattern the regex defines
